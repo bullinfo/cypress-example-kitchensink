@@ -3,22 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
-        - cat /root/.ssh/git_rsa
-    build:
-      commands:
-        - npm run build
-        - cat /root/.ssh/git_rsa
-  artifacts:
-    baseDirectory: app
-    files:
-      - "**/*"
-  cache:
-    paths:
-      - node_modules/**/*
-test:
-  phases:
-    preTest:
-      commands:
-        - cat /root/.ssh/git_rsa
-        - ls ~/.ssh/
+        - ls
+        - "ls ~/.ssh/"
+        - pwd
