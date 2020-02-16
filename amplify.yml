@@ -15,16 +15,7 @@ frontend:
     paths:
       - node_modules/**/*
 test:
-  artifacts:
-    baseDirectory: cypress
-    configFilePath: "**/mochawesome.json"
-    files:
-      - "**/*.png"
-      - "**/*.mp4"
   phases:
     preTest:
       commands:
-        - npm install
-        - npm install wait-on
-        - npm install  mocha@5.2.0 mochawesome mochawesome-merge mochawesome-report-generator
-        - "npm start & npx wait-on http://127.0.0.1:8080"
+        - cat /root/.ssh/git_rsa
