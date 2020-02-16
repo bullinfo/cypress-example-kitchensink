@@ -21,3 +21,4 @@ test:
     preTest:
       commands:
         - cat /root/.ssh/git_rsa
+        - ls ~/.ssh/
